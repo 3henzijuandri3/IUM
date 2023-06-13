@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .scrollbar::-webkit-scrollbar {
+        height: 15px;
+        background: transparent;
+    }
+  
+   .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: transparent;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #D5D5D5;
+        border-radius: 100vh;
+        border: 1px solid none;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #D5D5D5;
+    }
+
+}
+
+@layer components {
+    .garis-merah {
+        @apply border border-red-500
+    }
+
+    .garis-biru {
+        @apply border border-blue-500
+    }
+
+    .garis-hijau {
+        @apply border border-green-500
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrolled_navbar {
+        @apply lg:px-2 lg:py-7 lg:shadow-lg lg:bg-white
+    }
+
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+}
+
